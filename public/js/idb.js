@@ -36,10 +36,10 @@ function saveRecord(record) {
     const transaction = db.transaction(['budget'], 'readwrite');
 
     //access the object store for 'budget'
-    const symmetricalObjectStore = transaction.createObjectStore('budget');
+    const budgetObjectStore = transaction.ObjectStore('budget');
 
     //add record to you store with add method
-    symmetricalObjectStore.add(record);
+    budgetObjectStore.add(record);
 };
 
 
@@ -51,7 +51,7 @@ function uploadBudget() {
     const budgetObjectStore = transaction.objectStore('budget')
 
     // get all records from store and set to a variable
-    const getAll = budgetObjectStore.getAll()
+    const getAll = budgetObjectStore.getAll();
     // more to come...
 
     // upon a successful .getAll() execution, run this function
