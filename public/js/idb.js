@@ -21,8 +21,7 @@ request.onsuccess = function (event) {
 
     //check if app is online, if yes run sendTransaction()? to send up information to Db
     if (navigator.onLine) {
-        //create soon
-        //sendTransaction()
+        uploadBudget()
     }
 }
 
