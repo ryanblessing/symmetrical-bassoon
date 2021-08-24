@@ -1,6 +1,6 @@
 {
-    "name": "budget",
-    "short_name": "budget",
+    "name": "budget tracker",
+    "short_name": "bud track",
     "icons": [
       {
         "src": "public/icons/icon-72x72.png",
